@@ -1,0 +1,32 @@
+/* Shelby Bowen 06-09-22 
+Run Buddy Project Style Sheet */
+
+/* Using this body selector affects everything w/in the body 
+section of the html file linked to this sheet */
+
+body {
+    /* This color number is known as a hexadecimal number
+    and it defines a teal/light blue color */
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* apply styles to the <header> using the element selector */
+ header {
+     /* padding is a type of spacing around its content */
+     /* this syntax adds 20px to top and bottom, and 35px tp left and right side of the header */
+     padding: 20px 35px;
+     background-color: #39a6b2;
+ }
+
+ /* using element selectors, style the header h1 element and all <a> elements */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+}
+
+header a {
+    color: #fce138;
+}
