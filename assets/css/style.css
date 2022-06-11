@@ -1,9 +1,15 @@
 /* Shelby Bowen 06-09-22 
 Run Buddy Project Style Sheet */
 
+/* This is a universal selector. It tells every element on the page not to have
+any margin or border unless i've explicitly told it to. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Using this body selector affects everything w/in the body 
 section of the html file linked to this sheet */
-
 body {
     /* This color number is known as a hexadecimal number
     and it defines a teal/light blue color */
@@ -25,8 +31,30 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    display: inline;
 }
 
+/* adds styling to all the <a> elements within the <header> section only */
 header a {
+    text-decoration: none;
     color: #fce138;
 }
+
+/* adds styling to all <nav> elements within the <header> section only */
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+/* adds styling to the <nav> elements in <header> specifically <ul> and <li> */
+header nav ul li {
+    display: inline;
+}
+
+/* adds styling to the <a> elements only inside the <nav> element within the <header> element */
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
