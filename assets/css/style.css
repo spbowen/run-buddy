@@ -6,6 +6,7 @@ any margin or border unless i've explicitly told it to. */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Using this body selector affects everything w/in the body 
@@ -58,3 +59,29 @@ header nav ul li a {
     font-size: 22px;
 }
 
+/* add styling for footer element */
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+/* add styling to h2 element in footer */
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+/* add styling to div element in the footer */
+footer div {
+    float:right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+/* add styling to a element in the footer */
+footer a {
+    color: #024e76;
+}
