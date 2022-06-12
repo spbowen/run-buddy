@@ -55,9 +55,51 @@ page.-->
             </ul>
         </nav>
     </header>
-<!--hero/jumbotron-->
+
+<!--hero/jumbotron. Sign-up form is here-->
     <section>
+        <div>
+            <!--h3 and p are nested child elements to this div element-->
+            <h3> Get Started Today!</h3>
+            <p>Fill out this form and one of our trainers will schedule a consult. </p>
+        <!--Add form element-->
+        <form>
+            <!--Label element offers visual directive of what to enter in form-->
+            <label for="name">Enter full name</label>
+            <!--Input is a data field for the user to enter information-->
+            <input type="text" placeholder="Your Name" name="name"  id="name" />
+            <!--Email-->
+            <label for="email">Enter email address</label>
+            <input type="email" placeholder="Email Address" name="email" id="email" />
+            <!--Phone Number-->
+            <label for="phone">Enter a telephone number</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" />
+
+        <!--Radio button layout-->
+            <p>
+                Have you worked out with a trainer before?
+                <!--Yes-->
+                <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                <label for="trainer-yes">Yes</label>
+                <!--No-->
+                <input type="radio" name="trainer-confirm" id="trainer-no" />
+                <label for="trainer-no">No</label>
+            </p>
+            
+        <!--Checkbox layout-->
+            <p>
+                I acknowledge that I am at least 18 years of age.
+                <input type="checkbox" name="acknowledge" id="checkbox" />
+                <label for="checkbox"></label>
+            </p>
+        <!--Submit Botton layout-->
+            <button type="submit">
+                Get Running!
+            </button>
+        </form>
+        </div>
     </section>
+<!--End hero section-->
 
 <!--"what we do" section-->
     <section>
