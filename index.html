@@ -57,8 +57,8 @@ page.-->
     </header>
 
 <!--hero/jumbotron. Sign-up form is here-->
-    <section>
-        <div>
+    <section class="hero">
+        <div class="hero-form">
             <!--h3 and p are nested child elements to this div element-->
             <h3> Get Started Today!</h3>
             <p>Fill out this form and one of our trainers will schedule a consult. </p>
@@ -67,13 +67,13 @@ page.-->
             <!--Label element offers visual directive of what to enter in form-->
             <label for="name">Enter full name</label>
             <!--Input is a data field for the user to enter information-->
-            <input type="text" placeholder="Your Name" name="name"  id="name" />
+            <input type="text" placeholder="Your Name" name="name"  id="name"  class="form-input">
             <!--Email-->
             <label for="email">Enter email address</label>
-            <input type="email" placeholder="Email Address" name="email" id="email" />
+            <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" >
             <!--Phone Number-->
             <label for="phone">Enter a telephone number</label>
-            <input type="tel" placeholder="Phone Number" name="phone" id="phone" />
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" >
 
         <!--Radio button layout-->
             <p>
@@ -92,7 +92,7 @@ page.-->
                 <input type="checkbox" name="acknowledge" id="checkbox" />
                 <label for="checkbox"></label>
             </p>
-        <!--Submit Botton layout-->
+        <!--Submit Button layout-->
             <button type="submit">
                 Get Running!
             </button>
