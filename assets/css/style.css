@@ -167,10 +167,6 @@ section {
     margin: 0 5px;
   }
 
-/* aligm text in intro sections */
-.intro {
-    text-align: center;
-}
 
 /* cleaing up the p element within the intro in the section */
 .intro p {
@@ -180,11 +176,24 @@ section {
     font-size: 20px;
     /* this shorthand for setting a top and bottom margin of zero and a left and right margin of auto */
     margin: 0 auto;
+    text-align: center;
   }
+
+
+  .step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 
 /* add styling to what you do section */
 .steps {
-    text-align: center;
     background: #fce138;
   }
 
@@ -195,9 +204,11 @@ Its always best practice to shorten code */
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50px;
   }
   
 .primary-border {
@@ -209,36 +220,46 @@ Its always best practice to shorten code */
   }
 
 /* general clean-up and size color elements correctly for .steps */
-.steps div {
-    margin-bottom: 80px;
 
-}
 
-.steps img {
-    width: 15%;
-    margin: 10px 0;
-}
-
-.steps h3 {
+.step h3 {
     color: #024e76;
     font-size: 46px;
-    margin-top: 10;
+    flex: 1 30%;
 }
 
-.steps p {
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.steps-text p {
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18px;
 }
 
-.steps span {
-    font-size: 38px;
-  }
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+  flex: 12;
+}
+
+.step-img img {
+  max-width: 100%;
+}
 
 
 
 /* styling the trainers sections */
 .trainers {
-    text-align: center;
   }
   
   .trainer {
@@ -288,7 +309,6 @@ Its always best practice to shorten code */
 /* styling for Reach Out/ Contact Section */
 .contact {
     background: #024e76;
-    text-align: center;
 }
 
 
@@ -328,4 +348,8 @@ Its always best practice to shorten code */
   }
 
 /* end of reach out styles */
+
+.flex-row {
+  display: flex;
+}
 
