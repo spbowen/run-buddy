@@ -18,7 +18,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-
+/* HEADER ELEMENTS START */
 /* apply styles to the <header> using the element selector */
  header {
      /* padding is a type of spacing around its content */
@@ -29,6 +29,13 @@ body {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
+     position: sticky;
+     position: -webkit-sticky;
+     top: 0;
+     background-image: url("../images/hero-bg.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: 80%;
  }
 
  /* using element selectors, style the header h1 element and all <a> elements */
@@ -36,6 +43,8 @@ header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
+    /* text-shadow adds shadows to the run-buddy headings. */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 0;
 
    
@@ -67,7 +76,19 @@ header nav ul li a {
     font-weight: lighter;
     /* unit of measure called viewport width used here */
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* HEADER STYLING ENDS */
+
+/* FOOTER STYLING START */
 
 /* add styling for footer element */
 footer {
@@ -102,6 +123,8 @@ section {
      padding: 60px;
  }
 
+/* END FOOTER STYLES */
+
 /* Hero section style start */
 .hero {
     /* hero section background image */
@@ -114,7 +137,6 @@ section {
     align-items: flex-start;
     
 }
-/* Hero style end */
 
 /* hero section call to action styling */
 .hero-cta {
@@ -131,16 +153,19 @@ section {
   .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #fce138;
   }
 /* hero-form styling */
 .hero-form {
   border: 3px solid #024e76;
-  background-color: #fce138;
+  background-color: rgba(255, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  /* box shadow will had a shadow around the container in this case, the hero form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form h3 {
@@ -152,38 +177,29 @@ section {
     margin: 5px 0 15px 0;
 }
 
-
-
-
-
-  
-
-/* style for the input portion of the form */
+/* Adds Small Rounded Corners for contact form and button elements */
 .form-input {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-  }
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px; 
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
 
-/* Radio button styles */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
 .hero-form label {
-    margin: 0 5px;
-  }
+  margin: 0 5px;
+}
 
-
-.hero-form button {
-   color: #fce138;
-    background-color: #024e76;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-  } 
-
-/* hero styles end */
+/* HERO STYLES END */
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -231,6 +247,10 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -361,6 +381,14 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  /* adding border corners and shadow colors ro the input and contact form */
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -371,6 +399,12 @@ section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+}
+
+/* Hover allows the user to hover over the element and data is displayed */
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 .contact-info a {
